@@ -1,0 +1,88 @@
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 30px;
+  box-sizing: border-box;
+
+  &__icons-box {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--logo-box {
+        margin-bottom: 1.5em;
+      &__logo {
+      }
+    }
+
+    &--socialMedia-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &__icons {
+      }
+    }
+  }
+
+  &__links-box-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &--link {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  &__links-box-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &--link {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  &__subscriptions-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 18%;
+
+    &--input-box {
+
+        &__input {
+            
+        }
+
+    }
+
+    &--btn-box {
+
+        &__btn {
+            background-color: hsl(12, 88%, 59%);
+            border-radius: 20px;
+            width: 100%;
+            padding: 5px 5px;
+            color: white;
+            font-weight: 600;
+
+        }
+    }
+  }
+}
+
+
+input[type='text'] {
+    padding: 5px 5px;
+            border-radius: 20px ;
+}

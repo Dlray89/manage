@@ -1,19 +1,16 @@
 .call-to-action {
     box-sizing: border-box;
     padding: 15px 15px;
-    border: solid 2px green;
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: hsl(12, 88%, 59%);
 
     &__title-box {
-        border: solid 2px red;
         width: 60%;
 
         &--title {
             margin: 0 auto;
-            border: solid 2px green;
             text-align: left;
             font-size: 2.5rem;
             width: 60%;
