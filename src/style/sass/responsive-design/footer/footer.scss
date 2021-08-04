@@ -1,0 +1,14 @@
+@import '../../basw/variables.scss';
+
+
+
+@media(max-width: $layout-breakpoint-sm) {
+    .footer {
+        flex-direction: column-reverse;
+        height: 25em;
+
+        &__links-box-one {
+            
+        }
+    }
+}

@@ -15,8 +15,8 @@ const PrimaryContent = () => {
       <section className="primary-content__answer-section">
         {primary_data.map((item) => (
           <div key={item.id} className="primary-content__answer-section--values">
-            <div className="primary-content__answer-section--values__number">
-              {item.id}
+            <div className="primary-content__answer-section--values__number-box">
+              <p className="primary-content__answer-section--values__number-box--number">{item.id}</p>
             </div>
             <div className="primary-content__answer-section--values__details-section">
                     <h3 className="primary-content__answer-section--values__details-section--title">{ item.title}</h3>

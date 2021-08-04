@@ -6,7 +6,7 @@ import CallToAction from "./callToAction";
 
 const Home = () => {
   return (
-    <div className="naviagation">
+    <div >
       <HeroCard />
       <PrimaryContent />
       <TestimonialSlider />

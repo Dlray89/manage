@@ -1,0 +1,17 @@
+@import './herocard.scss';
+@import './primary-content.scss';
+@import './cta-card.scss';
+@import '../../basw/variables.scss';
+
+@media(max-width: $layout-breakpoint-sm) {
+    //located in app.js
+    .home-page {
+        background-image: url('../../../asset/home/home-bg.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y:-2em ;
+        background-position-x:5em ;
+    }
+}
+
+

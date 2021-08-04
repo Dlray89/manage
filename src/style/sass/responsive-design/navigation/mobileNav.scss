@@ -1,0 +1,11 @@
+@import '../../basw/variables.scss';
+
+@media (max-width: $layout-breakpoint-sm) {
+    .navigation {
+        &__main-container {
+            margin: 0;
+            padding: 10px 10px;
+            justify-content: space-between;
+        }
+    }
+}

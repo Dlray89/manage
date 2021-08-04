@@ -5,6 +5,10 @@
     flex-direction: row;
     align-items: center;
     background-color: hsl(12, 88%, 59%);
+    background-image: url('../../../asset/images/bg-simplify-section-desktop.svg');
+    height: 13em;
+    background-position-y: 50%;
+    background-position-x: 0em;
 
     &__title-box {
         width: 60%;
@@ -19,19 +23,21 @@
     }
 
     &__btn-box {
-        width: 30%;
+        width: 27%;
 
         &--cta-btn {
 
             border-radius: 20px;
             text-align: center;
             box-sizing: border-box;
-            width: 45%;
+            width: 30%;
             padding: 9px 9px;
-            margin: 0 auto;
+            margin-left: auto;
             background-color: white;
             color: hsl(12, 88%, 59%);
             font-weight: 700;
+            box-shadow: 4px 5px 2px -2px rgba(255, 255, 255, 0.404);
+            cursor: pointer;
 
         }
 

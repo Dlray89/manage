@@ -1,0 +1,14 @@
+@import '../../../basw/variables.scss';
+
+
+
+
+@media(max-width: $layout-breakpoint-sm) {
+    .testimonial {
+
+
+        &__getStarted-btn {
+            width: 40%;
+        }
+    }
+}

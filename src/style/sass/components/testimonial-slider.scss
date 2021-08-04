@@ -19,10 +19,15 @@
 
         &--name-box {
           text-align: center;
+          margin-top: 0.55em;
         }
 
         &--review-box {
           text-align: center;
+          width: 75%;
+          margin: 0.55em auto;
+          color: rgba(0, 0, 0, 0.548);
+
         }
       }
     }

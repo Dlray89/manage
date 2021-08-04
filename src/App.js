@@ -1,7 +1,7 @@
 import Routing from './routing'
 function App() {
   return (
-    <div className="home">
+    <div className="home-page">
 
 <Routing />
     </div>
