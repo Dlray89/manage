@@ -5,6 +5,7 @@
 
 @media(max-width: $layout-breakpoint-sm) {
     .testimonial {
+        margin-top: -15em;
 
 
         &__getStarted-btn {
@@ -15,6 +16,7 @@
 
 @media(max-width: $layout-breakpoint-xs) {
     .testimonial {
+        margin-top: -15em;
 
         &__title {
             font-size: 2rem;

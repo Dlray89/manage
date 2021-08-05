@@ -495,7 +495,7 @@ input[type=text] {
 }
 @media (max-width: 400px) {
   .call-to-action {
-    height: 24em;
+    height: 22em;
     flex-direction: column;
     background-repeat: no-repeat;
     background-image: url("../../../asset/images/bg-simplify-section-mobile.svg");
@@ -503,7 +503,7 @@ input[type=text] {
   .call-to-action__title-box {
     width: 100%;
     margin: 0 auto;
-    margin-top: 4em;
+    margin-top: 2em;
   }
   .call-to-action__title-box--title {
     text-align: center;
@@ -535,11 +535,17 @@ input[type=text] {
   }
 }
 @media (max-width: 600px) {
+  .testimonial {
+    margin-top: -15em;
+  }
   .testimonial__getStarted-btn {
     width: 30%;
   }
 }
 @media (max-width: 400px) {
+  .testimonial {
+    margin-top: -15em;
+  }
   .testimonial__title {
     font-size: 2rem;
   }
