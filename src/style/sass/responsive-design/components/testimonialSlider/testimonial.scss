@@ -8,7 +8,37 @@
 
 
         &__getStarted-btn {
-            width: 40%;
+            width: 30%;
+        }
+    }
+}
+
+@media(max-width: $layout-breakpoint-xs) {
+    .testimonial {
+
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__mySwiper {
+            &--swiperBox {
+
+                &__details{
+
+                    &--name-box {
+                       
+                    }
+
+                    
+                }
+            }
+        }
+
+        
+
+
+        &__getStarted-btn {
+            width: 35%;
         }
     }
 }

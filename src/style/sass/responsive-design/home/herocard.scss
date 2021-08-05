@@ -47,3 +47,53 @@
 
   }
 }
+
+@media (max-width: $layout-breakpoint-xs) {
+  .hero-card {
+    margin: 0;
+    flex-direction: column-reverse;
+ 
+
+    &__img-section {
+      width: 100%;
+
+      &--img {
+        width: 100%;
+      }
+    }
+
+    &__title-section {
+      width: 100%;
+
+      &--title {
+        font-size: 2.3rem;
+        width: 100%;
+        text-align: center;
+        font-weight: 800;
+      }
+
+      &--sub {
+        font-size: 1.3rem;
+        text-align: center;
+        color: black;
+        margin: 0 auto;
+        margin-top: -1em;
+        width: 90%;
+      }
+
+      &--btn-section {
+          width: 100%;
+          text-align: center;
+          margin-top: -1em;
+
+          &__btn {
+              margin: 0 auto;
+              font-weight: 800;
+          }
+      }
+    }
+
+
+  }
+}
+
