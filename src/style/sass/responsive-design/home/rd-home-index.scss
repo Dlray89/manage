@@ -3,6 +3,62 @@
 @import './cta-card.scss';
 @import '../../basw/variables.scss';
 
+@media(max-width: $layout-breakpoint-md) {
+    //located in app.js
+    .home-page {
+        background-image: url('../../../asset/home/home-bg.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y:-18em ;
+        background-position-x:30em ;
+    }
+}
+
+@media(max-width: $layout-breakpoint-md1) {
+    //located in app.js
+    .home-page {
+        background-image: url('../../../asset/home/home-bg.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y:-2em ;
+        background-position-x:5em ;
+    }
+}
+
+@media(max-width: $layout-breakpoint-md1) {
+    //located in app.js
+    .home-page {
+        background-image: url('../../../asset/home/home-bg.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y:-2em ;
+        background-position-x:5em ;
+    }
+}
+
+@media(max-width: $layout-breakpoint-md2) {
+    //located in app.js
+    .home-page {
+        background-image: url('../../../asset/home/home-bg.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y:-15em ;
+        background-position-x:25em ;
+    }
+}
+
+@media(max-width: $layout-breakpoint-md3) {
+    //located in app.js
+    .home-page {
+        background-image: url('../../../asset/home/home-bg.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y:-10em ;
+        background-position-x:18em ;
+    }
+}
+
+
 @media(max-width: $layout-breakpoint-sm) {
     //located in app.js
     .home-page {

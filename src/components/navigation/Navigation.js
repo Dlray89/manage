@@ -13,7 +13,7 @@ const Navigation = () => {
   const [switchNav, setSwitchNav] = useState(false);
   const [backdrop, setBackdrop] = useState(false)
 
-  const handleNavSwitch = () => { setSwitchNav(true); setBackdrop(true)};
+  const handleNavSwitch = () => { setSwitchNav(true); setBackdrop(!backdrop)};
 
   const handleSwitchBack = () => { setSwitchNav(false); setBackdrop(false)};
 

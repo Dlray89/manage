@@ -29,6 +29,36 @@
   }
 }
 
+@media (max-width: $layout-breakpoint-md1) {
+  .call-to-action {
+    height: 12em;
+    background-repeat: no-repeat;
+    background-image: url("../../../asset/images/bg-simplify-section-mobile.svg");
+
+    &__title-box {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 2.5em;
+
+      &--title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 1.5em;
+      }
+    }
+
+    &__btn-box {
+      width: 100%;
+
+      &--cta-btn {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+
 @media (max-width: $layout-breakpoint-md2) {
   .call-to-action {
     height: 15em;
