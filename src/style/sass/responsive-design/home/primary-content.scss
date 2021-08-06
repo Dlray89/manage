@@ -1,159 +1,159 @@
-@import '../../basw/variables.scss';
+@import "../../basw/variables.scss";
 
-@media(max-width: $layout-breakpoint-md) {
-    .primary-content {
+@media (max-width: $layout-breakpoint-md) {
+  .primary-content {
+    margin-top: 5em;
+    flex-direction: column;
+
+    &__question-section {
+      width: 70%;
+      text-align: center;
+      margin: 0 auto;
+
+      &--sub {
+        font-size: 1.5rem;
+        color: rgba(0, 0, 0, 0.63);
+      }
+    }
+
+    &__answer-section {
+      width: 100%;
+
+      &--values {
         margin-top: 5em;
-        flex-direction: column;
 
-        &__question-section {
-            width: 70%;
+        &__number-box {
+          padding: 5px 5px;
+          width: 14%;
+          display: none;
+
+          &--number {
+          }
+        }
+
+        &__details-section {
+          &--title {
+            font-size: 1.3rem;
+            background-color: rgba(255, 240, 236, 255);
+            padding: 5px 5px;
             text-align: center;
-            margin: 0 auto;
+          }
 
-            &--sub {
-                font-size: 1.5rem;
-                color: rgba(0, 0, 0, 0.63);
-            }
+          &--sub {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.63);
+          }
         }
-
-        &__answer-section {
-            width: 100%;
-
-            &--values {
-                margin-top: 5em;
-
-                &__number-box {
-                    padding: 5px 5px;
-                    width: 14%;
-                    display: none;
-
-                    &--number {
-                    }
-
-                }
-
-                &__details-section {
-
-                    &--title {
-                        font-size: 1.3rem;
-                        background-color: rgba(255,240,236,255);
-                        padding: 5px 5px;
-                        text-align: center;
-                    }
-
-                    &--sub {
-                        text-align: center;
-                        color: rgba(0, 0, 0, 0.63);
-
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }
 
+@media (max-width: $layout-breakpoint-sm) {
+  .primary-content {
+    margin: 0;
+    flex-direction: column;
 
+    &__question-section {
+      width: 70%;
+      text-align: center;
+      margin: 0 auto;
 
-@media(max-width: $layout-breakpoint-sm) {
-    .primary-content {
-        margin: 0;
-        flex-direction: column;
+      &--title {
+        font-size: 2rem;
+      }
 
-        &__question-section {
-            width: 70%;
-            text-align: center;
-            margin: 0 auto;
-        }
-
-        &__answer-section {
-            width: 100%;
-
-            &--values {
-                margin-top: 5em;
-
-                &__number-box {
-                    padding: 5px 5px;
-                    width: 14%;
-                    display: none;
-
-                    &--number {
-                    }
-
-                }
-
-                &__details-section {
-
-                    &--title {
-                        font-size: 1.3rem;
-                        background-color: rgba(255,240,236,255);
-                        padding: 5px 5px;
-                        text-align: center;
-                    }
-
-                    &--sub {
-                        text-align: center;
-                    }
-                }
-            }
-        }
+      &--sub {
+        font-size: 1rem;
+      }
     }
+
+    &__answer-section {
+      width: 100%;
+
+      &--values {
+        margin-top: 5em;
+
+        &__number-box {
+          padding: 5px 5px;
+          width: 14%;
+          display: none;
+
+          &--number {
+          }
+        }
+
+        &__details-section {
+          &--title {
+            font-size: 1.3rem;
+            background-color: rgba(255, 240, 236, 255);
+            padding: 5px 5px;
+            text-align: center;
+          }
+
+          &--sub {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }
 
-@media(max-width: $layout-breakpoint-xs) {
-    .primary-content {
-        flex-direction: column;
+@media (max-width: $layout-breakpoint-xs) {
+  .primary-content {
+    flex-direction: column;
 
-        &__question-section {
-            width: 90%;
-            text-align: center;
-            margin: 0 auto;
+    &__question-section {
+      width: 90%;
+      text-align: center;
+      margin: 0 auto;
 
-            &--sub {
-                color: rgba(0, 0, 0, 0.705);
-                font-weight: 500;
-            }
-        }
+      &--title {
+          font-size: 1.5rem;
+      }
 
-        &__answer-section {
-            width: 100%;
-            
-            box-sizing: border-box;
-
-            &--values {
-                margin-top: 3em;
-                
-
-
-                &__number-box {
-                    padding: 5px 5px;
-                    width: 14%;
-                    display: none;
-
-
-                    &--number {
-                    }
-
-                }
-
-                &__details-section {
-                    width: 90%;
-
-
-                    &--title {
-                        font-size: 1.3rem;
-                        background-color: rgba(255,240,236,255);
-                        padding: 5px 5px;
-                        text-align: center;
-                        margin-bottom: 1em;
-                    }
-
-                    &--sub {
-                        text-align: center;
-                        color: rgba(0, 0, 0, 0.781);
-                        font-size: 1.2rem;
-                    }
-                }
-            }
-        }
+      &--sub {
+        color: rgba(0, 0, 0, 0.705);
+        font-weight: 500;
+      }
     }
+
+    &__answer-section {
+      width: 100%;
+
+      box-sizing: border-box;
+
+      &--values {
+        margin-top: 3em;
+
+        &__number-box {
+          padding: 5px 5px;
+          width: 14%;
+          display: none;
+
+          &--number {
+          }
+        }
+
+        &__details-section {
+          width: 90%;
+
+          &--title {
+            font-size: 1.3rem;
+            background-color: rgba(255, 240, 236, 255);
+            padding: 5px 5px;
+            text-align: center;
+            margin-bottom: 1em;
+          }
+
+          &--sub {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.781);
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
 }
