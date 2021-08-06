@@ -66,7 +66,7 @@
 .hero-card__title-section--sub {
   width: 78%;
   font-size: 1.9rem;
-  color: rgba(0, 0, 0, 0.404);
+  color: rgba(0, 0, 0, 0.726);
 }
 .hero-card__title-section--btn-section {
   width: 78%;
@@ -113,7 +113,7 @@
 .primary-content__question-section--sub {
   font-size: 1.2rem;
   line-height: 30px;
-  color: rgba(0, 0, 0, 0.404);
+  color: rgba(0, 0, 0, 0.726);
 }
 .primary-content__answer-section {
   width: 49%;
@@ -155,7 +155,7 @@
 .primary-content__answer-section--values__details-section--sub {
   font-size: 1.3rem;
   line-height: 30px;
-  color: rgba(0, 0, 0, 0.404);
+  color: rgba(0, 0, 0, 0.726);
 }
 
 .call-to-action {
@@ -241,7 +241,7 @@
   text-align: center;
   width: 75%;
   margin: 0.55em auto;
-  color: rgba(0, 0, 0, 0.781);
+  color: rgba(0, 0, 0, 0.726);
 }
 .testimonial__getStarted-btn {
   width: 15%;
