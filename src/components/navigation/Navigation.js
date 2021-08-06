@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../asset/images/logo.svg";
 import { NavLinks } from "../../data/topNav";
 import DesktopNav from "./desktopNav";
-import { useTheme, useMediaQuery, IconButton } from "@material-ui/core";
+import { useTheme, useMediaQuery, IconButton, Backdrop } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import CancelIcon from "@material-ui/icons/Cancel";
 
@@ -11,10 +11,11 @@ const Navigation = () => {
   const theme = useTheme();
   const mdMobile = useMediaQuery(theme.breakpoints.down("md"));
   const [switchNav, setSwitchNav] = useState(false);
+  const [backdrop, setBackdrop] = useState(false)
 
-  const handleNavSwitch = () => setSwitchNav(true);
+  const handleNavSwitch = () => { setSwitchNav(true); setBackdrop(true)};
 
-  const handleSwitchBack = () => setSwitchNav(false);
+  const handleSwitchBack = () => { setSwitchNav(false); setBackdrop(false)};
 
   return (
     <div className="navigation">
@@ -38,9 +39,9 @@ const Navigation = () => {
                 </section>
 
                 {NavLinks.map((link) => (
-                  <div>
+                  <Backdrop open={backdrop}>
                     <Link>{link.name}</Link>
-                  </div>
+                  </Backdrop>
                 ))}
               </div>
             ) : (

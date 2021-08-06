@@ -1,7 +1,16 @@
 @import '../../../basw/variables.scss';
 
 
+@media(max-width: $layout-breakpoint-md2) {
+    .testimonial {
+        margin-top: -15em;
 
+
+        &__getStarted-btn {
+            width: 25%;
+        }
+    }
+}
 
 @media(max-width: $layout-breakpoint-sm) {
     .testimonial {
