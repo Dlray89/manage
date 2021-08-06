@@ -570,6 +570,7 @@ input[type=text] {
   }
   .hero-card__title-section {
     width: 100%;
+    margin-top: -8em;
   }
   .hero-card__title-section--title {
     font-size: 2rem;
