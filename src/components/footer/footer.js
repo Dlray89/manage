@@ -1,10 +1,35 @@
-import React from "react";
+import React, { useState} from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../asset/images/logo-white.svg";
 import { SocialMediaLinks } from "../../data/social-media";
-import { Hidden } from "@material-ui/core";
+import { Hidden , TextField} from "@material-ui/core";
 
-const Footer = () => {
+const Footer = (props) => {
+
+  const [email, setEmail] = useState('');
+  const [emailHelper, setEmailHelper] = useState('');
+
+  const onValidation = (e) => {
+    let valid;
+
+    switch (e.target.id) {
+      case "email":
+        setEmail(e.target.valid);
+        valid = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(
+          e.target.value
+        );
+
+        if (!valid) {
+          setEmailHelper("Invaild email example@email.com");
+        } else {
+          setEmailHelper("");
+        }
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
     <div className="footer">
       <section className="footer__icons-box">
@@ -54,10 +79,31 @@ const Footer = () => {
       <section className="footer__subscriptions-box">
         <div className="footer__subscriptions-box--input-box">
           {" "}
-          <input
+          <TextField
+            id='email'
+            value={email}
+            error={emailHelper.length !== 0}
+            helperText={emailHelper}
+            onChange={onValidation}
+            variant='outlined'
             type="text"
             className="footer__subscriptions-box--input-box__input"
             placeholder="Updates in your inbox"
+            inputProps={{
+              style: {
+                background: 'white',
+                borderRadius: '10px',
+
+                
+              }
+            }}
+
+            InputProps={{
+              style: {
+                borderRadius: '10px',
+
+              }
+            }}
           />
         </div>
 
