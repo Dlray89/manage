@@ -3,7 +3,14 @@ import { Link } from "react-router-dom";
 import Logo from "../../asset/images/logo.svg";
 import { NavLinks } from "../../data/topNav";
 import DesktopNav from "./desktopNav";
-import { useTheme, useMediaQuery, IconButton, Backdrop } from "@material-ui/core";
+import {
+  useTheme,
+  useMediaQuery,
+  IconButton,
+  Backdrop,
+  Button,
+  Divider
+} from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import CancelIcon from "@material-ui/icons/Cancel";
 
@@ -11,11 +18,17 @@ const Navigation = () => {
   const theme = useTheme();
   const mdMobile = useMediaQuery(theme.breakpoints.down("md"));
   const [switchNav, setSwitchNav] = useState(false);
-  const [backdrop, setBackdrop] = useState(false)
+  const [backdrop, setBackdrop] = useState(false);
 
-  const handleNavSwitch = () => { setSwitchNav(true); setBackdrop(!backdrop)};
+  const handleNavSwitch = () => {
+    setSwitchNav(true);
+    setBackdrop(!backdrop);
+  };
 
-  const handleSwitchBack = () => { setSwitchNav(false); setBackdrop(false)};
+  const handleSwitchBack = () => {
+    setSwitchNav(false);
+    setBackdrop(false);
+  };
 
   return (
     <div className="navigation">
@@ -31,18 +44,25 @@ const Navigation = () => {
         {mdMobile ? (
           <>
             {switchNav ? (
-              <div>
-                <section>
+              <div className="navigation__main-container--mobileNavigation">
+                <section className="navigation__main-container--mobileNavigation__menu-btn-box">
                   <IconButton onClick={handleSwitchBack}>
                     <CancelIcon />
                   </IconButton>
                 </section>
-
-                {NavLinks.map((link) => (
-                  <Backdrop open={backdrop}>
-                    <Link>{link.name}</Link>
-                  </Backdrop>
-                ))}
+                <div className="navigation__main-container--menuItems-box">
+                  {NavLinks.map((link) => (
+                    <div className="navigation__main-container--menuItems-box__links-box">
+                      <Link
+                        component={Button}
+                        className="navigation__main-container--menuItems-box__links-box--links"
+                      >
+                        {link.name}
+                      </Link>
+                      <Divider />
+                    </div>
+                  ))}
+                </div>
               </div>
             ) : (
               <IconButton onClick={handleNavSwitch}>
