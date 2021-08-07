@@ -7,7 +7,6 @@ import {
   useTheme,
   useMediaQuery,
   IconButton,
-  Backdrop,
   Button,
   Divider
 } from "@material-ui/core";
@@ -50,7 +49,7 @@ const Navigation = () => {
                     <CancelIcon />
                   </IconButton>
                 </section>
-                <div className="navigation__main-container--menuItems-box">
+                <div onMouseLeave={handleSwitchBack} className="navigation__main-container--menuItems-box">
                   {NavLinks.map((link) => (
                     <div className="navigation__main-container--menuItems-box__links-box">
                       <Link
