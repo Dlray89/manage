@@ -2,8 +2,12 @@
 
 > Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
 <br />
+
+
 ## Getting Started:
 > Install dependencies using: `npm i || npm install`
+
+
 </br >
 Your development enviroment will be: http://localhost:3000/
 </br>
