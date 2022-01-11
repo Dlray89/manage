@@ -29,10 +29,6 @@ Once you ran `npm i` you will be good to go. all you have to do now is start the
 <br />
 more info: https://mui.com/
 
-> Installing axios <br /> `npm i axios`
-<br />
-more info: https://axios-http.com/
-
 
 
 ## Contact
